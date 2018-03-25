@@ -24,9 +24,6 @@ app.use(bodyParser.json());
 app.use(cookieParser())
 app.use(session({
 	secret: 'lesson',
-	store: new SequelizeStore({
-		db: models.sequelize
- 	}),
  	resave: true,
  	saveUninitialized: false
 }));
