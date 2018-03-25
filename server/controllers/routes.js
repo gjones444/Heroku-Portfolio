@@ -19,11 +19,6 @@ if(process.env.DATABASE_URL){
 var pgClient = new pg.Client(dbUrl);
 pgClient.connect();
 
-var path = require('path');
-
-var LocalStrategy = require('passport-local').Strategy;
-var bcrypt = require('bcrypt-nodejs');
-
 module.exports = (app, passport) => {
 
 	app.get('/', function(req,res){
