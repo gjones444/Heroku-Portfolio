@@ -25,6 +25,6 @@ app.use(session({
 
 app.use(express.static('./'));
 
-require('./controllers/routes.js')(app, passport);
+require('./controllers/routes.js')(app);
 
 app.listen(PORT);
