@@ -1,8 +1,6 @@
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
-
-var models = require('./models');
 models.sequelize.sync();
 
 var cookieParser = require('cookie-parser');
@@ -35,7 +33,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(express.static('./client/public'));
+app.use(express.static('./'));
 
 require('./controllers/routes.js')(app, passport);
 

@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 var router = express.Router();
 var dbUrl;
-var models = require('./../models');
 models.sequelize.sync();
 
 if(process.env.DATABASE_URL){
