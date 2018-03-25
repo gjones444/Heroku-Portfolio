@@ -1,8 +1,6 @@
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
-models.sequelize.sync();
-
 var cookieParser = require('cookie-parser');
 var passport = require('passport');
 var session = require('express-session');
