@@ -5,7 +5,7 @@
   "main": "js/scripts.js",
   "scripts": {
     "watch": "gulp watch",
-    "start": "node index.htnl"
+    "start": "node index.html"
   },
   "keywords": [
     "portfolio",
